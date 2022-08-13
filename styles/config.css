@@ -1,0 +1,38 @@
+.dark:root {
+  --bg: #121214;
+  --bg-sidebar: #262634;
+  --text: #2f2f40;
+  --text-strong: #fff;
+  --green: #00b37e;
+  --green-dark: #00875f;
+  --red-500: #f75a68;
+  --border: #323238;
+  --text-list: #fff;
+}
+
+.light:root {
+  --bg: #fff;
+  --bg-sidebar: #e1e1e6;
+  --text: #ededf2;
+  --text-strong: #000;
+  --green: #00b37e;
+  --green-dark: #00875f;
+  --red-500: #f75a68;
+  --text-list: #000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Bree Serif", serif;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}

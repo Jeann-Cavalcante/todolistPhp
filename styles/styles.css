@@ -1,0 +1,146 @@
+header {
+  background-color: var(--bg);
+  height: 150px;
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: var(--bg-sidebar);
+  height: calc(100vh - 150px);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  font-size: 2rem;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  gap: 10px;
+}
+
+.moon-sun {
+  font-size: 2rem;
+  color: var(--green);
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 0.3s ease;
+}
+
+.moon-sun:hover {
+  color: var(--green-dark);
+}
+
+.form form {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  padding: 0 1.5rem;
+  gap: 0.3rem;
+  margin-top: -1.3rem;
+}
+
+.form form input {
+  background-color: var(--text);
+  height: 50px;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: var(--text-list);
+  padding-left: 1.5rem;
+}
+
+.form form button {
+  background-color: var(--green);
+  color: var(--bg);
+  height: 50px;
+  border: none;
+  outline: none;
+  width: 50px;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form form button i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.form form button:hover {
+  background: var(--green-dark);
+}
+
+.form form input:focus {
+  border: 1px solid var(--green);
+  color: var(--text-list);
+  padding-left: 1.5rem;
+}
+
+.form form input:active {
+  border: 1px solid var(--green);
+}
+
+.todo-list {
+  padding: 3rem 1.5rem 0 1.5rem;
+}
+
+.todo-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.todo-list li {
+  background-color: var(--text);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  color: var(--text-list);
+}
+
+.todo-list li a {
+  color: var(--text-list);
+  text-decoration: none;
+  background: transparent;
+}
+
+.todo-list li a i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.todo-list li i:hover {
+  color: var(--green);
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  color: var(--green);
+}
+
+.result span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.result span .number {
+  background-color: var(--text);
+  padding: 0.1rem 0.5rem;
+  border-radius: 50%;
+}
